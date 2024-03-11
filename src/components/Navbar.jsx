@@ -15,7 +15,7 @@ function Navbar() {
     return (
         <>
         <nav>
-            <Flex alignItems="center">
+            <Flex alignItems="center" ml={-5}>
                 <Box>
                     <Image id="logo" src={logo} />
                 </Box>
