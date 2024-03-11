@@ -2,7 +2,7 @@ import "./NavbarStyles.css"
 import logo from "../img/logo.png"
 import React from 'react'
 import { Box, Popover, PopoverTrigger, Flex, Text, Image } from "@chakra-ui/react"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 const NAV_ITEMS = [
     { label: 'Home', href: '' },
@@ -11,6 +11,7 @@ const NAV_ITEMS = [
   ]
 
 function Navbar() {
+    const location = useLocation()
     return (
         <>
         <nav>
@@ -37,7 +38,24 @@ function Navbar() {
                             href={navItem.href ?? '#'}
                             fontSize={"1.3rem"}
                             fontWeight={600}
-                            color="#0057B7"
+                            color={
+                                location.pathname === "/" + navItem.href
+                                  ? "#FFDD00"
+                                  : "#0057B7"
+                              }
+                              _after={
+                                location.pathname === "/" + navItem.href
+                                    ? {
+                                        content: '""',
+                                        width: "50%",
+                                        height: "2px",
+                                        background: "#FFDD00",
+                                        position: "absolute",
+                                        bottom: "-4px",
+                                        left: "10px"
+                                    }
+                                    : {}
+                            }
                             transition={"0.3s ease-in-out"}
                             _hover={{
                                 textDecoration: 'none',
