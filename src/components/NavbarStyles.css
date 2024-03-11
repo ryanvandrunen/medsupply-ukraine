@@ -1,0 +1,39 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 20px 80px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+.navbar-item.active {
+    color: #FFDD00;
+}
+
+.navbar-item:hover::after,
+.navbar-item.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #FFDD00;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#logo {
+    max-height: 75px;
+    max-width: 75px;
+}
