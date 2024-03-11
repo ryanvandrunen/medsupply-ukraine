@@ -1,7 +1,7 @@
 import './App.css'
 import React from 'react'
 import { ChakraProvider, Box } from '@chakra-ui/react'
-import Navbar from "./components/Navbar"
+import { Navbar } from "./components/Navbar"
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
 import Home from './components/Home'
 import Team from './components/Team'
