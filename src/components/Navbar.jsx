@@ -7,6 +7,7 @@ import { Link, useLocation } from "react-router-dom"
 const NAV_ITEMS = [
     { label: 'Home', href: '' },
     { label: 'Team', href: 'team' },
+    { label: 'Info', href: 'info' },
     { label: 'Donate', href: 'donate' }
   ]
 
