@@ -7,6 +7,7 @@ import Home from './components/Home'
 import Team from './components/Team'
 import Donate from './components/Donate'
 import Info from './components/Info'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
         <Route path="/info" element={<Info/>}/>
       </Routes>
       </BrowserRouter>
+
+      <Box>
+        <Footer/>
+      </Box>
     </ChakraProvider>
   );
 }

@@ -1,4 +1,4 @@
-import logo from "../img/logo.png"
+import logo from "../img/medsupply_logo.png"
 import React from 'react'
 import { Box, Popover, PopoverTrigger, Flex, Text, Image, IconButton, useDisclosure, Stack, Collapse, Icon } from "@chakra-ui/react"
 import { HamburgerIcon, CloseIcon, ChevronDownIcon } from "@chakra-ui/icons"
@@ -35,11 +35,11 @@ export const Navbar = () => {
                 </Flex>
                 <Flex w={{ base: "100%", md: "50%" }} ml={{ base: "100%", md: "0" }} flex={{ base: 1 }} justifyContent={{ base: 'flex-end', md: 'start' }}>
                     <Box m={2} mt={1} ml={{ base: -4, md: 0 }}>
-                        <Image src={logo} maxH={75} maxW={75}/>
+                        <Image src={logo} maxH={100} maxW={100} borderRadius="50%"/>
                     </Box>
-                    <Flex display={{ base: 'none', md: 'flex' }} direction={"column"} mt={3} ml={2}>
+                    <Flex display={{ base: 'none', md: 'flex' }} direction={"column"} mt={7} ml={5}>
                     <Text
-                            fontWeight={600}
+                            fontWeight={700}
                             color="#0057B7">
                             Medsupply Ukraine
                         </Text>

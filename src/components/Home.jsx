@@ -1,9 +1,10 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 
 export default function Home() {
   return (
-    <div>
+    <Container minH={'500px'}>
       <p>Home page</p>
-    </div>
+    </Container>
   )
 }
