@@ -15,7 +15,7 @@ export const Navbar = () => {
     const { isOpen, onToggle } = useDisclosure()
 
     return (
-        <Box>
+        <Box> 
             <Flex
             minH={'60px'}
             py={{ base: 6, md: 6, sm: 3 }}
@@ -35,16 +35,18 @@ export const Navbar = () => {
                 </Flex>
                 <Flex w={{ base: "100%", md: "50%" }} ml={{ base: "100%", md: "0" }} flex={{ base: 1 }} justifyContent={{ base: 'flex-end', md: 'start' }}>
                     <Box m={2} mt={1} ml={{ base: -4, md: 0 }}>
-                        <Image src={logo} maxH={100} maxW={100} borderRadius="50%"/>
+                        <Image src={logo} maxH="80px" maxW="80px" borderRadius="50%"/>
                     </Box>
-                    <Flex display={{ base: 'none', md: 'flex' }} direction={"column"} mt={7} ml={5}>
+                    <Flex display={{ base: 'none', md: 'flex' }} direction={"column"} mt={4} ml={5}>
                     <Text
                             fontWeight={700}
+                            fontSize={20}
                             color="#0057B7">
                             Medsupply Ukraine
                         </Text>
                         <Text
-                        color="#0057B7">
+                        color="#0057B7"
+                        fontSize={18}>
                         Queen's University
                         </Text>
                     </Flex>

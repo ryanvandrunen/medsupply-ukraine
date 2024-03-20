@@ -1,5 +1,5 @@
 import './App.css'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { ChakraProvider, Box } from '@chakra-ui/react'
 import { Navbar } from "./components/Navbar"
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
@@ -10,12 +10,11 @@ import Info from './components/Info'
 import Footer from './components/Footer'
 
 function App() {
+
   return (
     <ChakraProvider>
       <BrowserRouter>
-      <Box>
         <Navbar/>
-      </Box>
 
       <Routes>
         <Route path="/" element={<Home/>}/>
