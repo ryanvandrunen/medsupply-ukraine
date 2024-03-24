@@ -35,18 +35,19 @@ export const Navbar = () => {
                 </Flex>
                 <Flex w={{ base: "100%", md: "50%" }} ml={{ base: "100%", md: "0" }} flex={{ base: 1 }} justifyContent={{ base: 'flex-end', md: 'start' }}>
                     <Box m={2} mt={1} ml={{ base: -4, md: 0 }}>
-                        <Image src={logo} maxH="80px" maxW="80px" borderRadius="50%"/>
+                        <Image src={logo} maxH="75px" maxW="75px" borderRadius="50%"/>
                     </Box>
-                    <Flex display={{ base: 'none', md: 'flex' }} direction={"column"} mt={4} ml={5}>
+                    <Flex display={{ base: 'none', md: 'flex' }} direction={"column"} mt={2} ml={5}>
                     <Text
-                            fontWeight={700}
-                            fontSize={20}
-                            color="#0057B7">
+                            fontWeight="medium"
+                            fontSize={'2xl'}
+                            color="blueCons">
                             Medsupply Ukraine
                         </Text>
                         <Text
-                        color="#0057B7"
-                        fontSize={18}>
+                        color="blueCons"
+                        fontSize={18}
+                        fontWeight="normal">
                         Queen's University
                         </Text>
                     </Flex>
@@ -84,11 +85,11 @@ const DesktopNav = () => {
                             as="a"
                             href={navItem.href ?? '#'}
                             fontSize={"1.3rem"}
-                            fontWeight={600}
+                            fontWeight="normal"
                             color={
                                 location.pathname === "/" + navItem.href
-                                ? "#FFDD00"
-                                : "#0057B7"
+                                ? "yellowCons"
+                                : "blueCons"
                             }
                             _after={
                                 location.pathname === "/" + navItem.href
@@ -96,7 +97,7 @@ const DesktopNav = () => {
                                         content: '""',
                                         width: "60%",
                                         height: "2px",
-                                        background: "#FFDD00",
+                                        background: "yellowCons",
                                         position: "absolute",
                                         bottom: "-4px",
                                         left: "1px"
@@ -106,12 +107,12 @@ const DesktopNav = () => {
                             transition={"0.3s ease-in-out"}
                             _hover={{
                                 textDecoration: 'none',
-                                color: "#FFDD00",
+                                color: "yellowCons",
                                 _after:{
                                     content: '""',
                                     width: "60%",
                                     height: "2px",
-                                    background: "#FFDD00",
+                                    background: "yellowCons",
                                     position: "absolute",
                                     bottom: "-4px",
                                     left: "1px"
@@ -150,12 +151,12 @@ const MobileNavItem = ({ label, children, href }) => {
           alignItems="center"
           color={
             location.pathname === "/" + href
-            ? "#FFDD00"
-            : "#0057B7"
+            ? "yellowCons"
+            : "blueCons"
         }
           _hover={{
             textDecoration: 'none',
-            color: "#FFDD00"
+            color: "yellowCons"
           }}>
           <Text fontWeight={600}>
             {label}

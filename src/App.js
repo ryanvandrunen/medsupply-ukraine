@@ -8,11 +8,12 @@ import Team from './components/Team'
 import Donate from './components/Donate'
 import Info from './components/Info'
 import Footer from './components/Footer'
+import theme from "./theme"
 
 function App() {
 
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <BrowserRouter>
         <Navbar/>
 

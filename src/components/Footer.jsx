@@ -30,7 +30,7 @@ const Footer = () => {
                     objectFit='contain'
                     alt='Logo'
                 />
-                <Text color="#0057B7" fontWeight={600}>&copy; {new Date().getFullYear()} Medsupply Ukraine. All rights reserved</Text>
+                <Text color="#0057B7" fontWeight="normal">&copy; {new Date().getFullYear()} Medsupply Ukraine. All rights reserved</Text>
                 <ButtonGroup variant="ghost" color="white">
                     {SOCIAL_BUTTONS.map((item, i) => (
                         <IconButton
