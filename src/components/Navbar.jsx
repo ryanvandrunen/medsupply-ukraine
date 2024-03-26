@@ -5,10 +5,10 @@ import { HamburgerIcon, CloseIcon, ChevronDownIcon } from "@chakra-ui/icons"
 import { Link, useLocation } from "react-router-dom"
 
 const NAV_ITEMS = [
-    { label: 'Home', href: '' },
-    { label: 'Team', href: 'team' },
-    { label: 'Info', href: 'info' },
-    { label: 'Donate', href: 'donate' }
+    { label: 'HOME', href: '' },
+    { label: 'TEAM', href: 'team' },
+    { label: 'INFO', href: 'info' },
+    { label: 'DONATE', href: 'donate' }
   ]
 
 export const Navbar = () => {
@@ -17,7 +17,6 @@ export const Navbar = () => {
     return (
         <Box> 
             <Flex
-            minH={'60px'}
             py={{ base: 6, md: 6, sm: 3 }}
             px={{ base: 10 }}
             align={'center'}>

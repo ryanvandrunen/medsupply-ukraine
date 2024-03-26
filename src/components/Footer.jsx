@@ -5,8 +5,8 @@ import { FiLink } from 'react-icons/fi'
 import logo from "../img/logo.png";
 
 const SOCIAL_BUTTONS = [
-    {href: "mailto:example@example.com", label:"Email", icon: FaRegEnvelope, hoverIcon: FaEnvelope},
-    {href: "https://www.instagram.com/medsupply-ukraine", label:"Instagram", icon: FaInstagram},
+    {href: "mailto:medsupply.ukraine@gmail.com", label:"Email", icon: FaRegEnvelope, hoverIcon: FaEnvelope},
+    {href: "https://www.instagram.com/medsupply_ukraine/", label:"Instagram", icon: FaInstagram},
     {href: "https://linktr.ee/medsupply.ukraine", label:"Link", icon: FiLink}
 ]
 
