@@ -13,12 +13,11 @@ const SOCIAL_BUTTONS = [
 const Footer = () => {
     return (
         <Box
-            color="white"
             mt={6}
         >
             <Container
                 as={Stack}
-                maxW={'6xl'}
+                maxW={'8xl'}
                 py={4}
                 direction={{ base: 'column', md: 'row' }}
                 spacing={4}
