@@ -94,22 +94,6 @@ export default function Team() {
           <Flex direction={{ base: 'column', md: 'row' }} wrap="wrap" justify="center" align="center">
             {[TEAM[2], TEAM[2]].map(lead => <MemberCard member={lead} />)}
           </Flex>
-
-          {/* <Text textAlign={"center"} fontSize={"xx-large"} fontWeight={"bold"}>Club Leads</Text>
-          <Flex direction={{ base: 'column', md: 'row' }} wrap="wrap" justify="center" align="center">
-              {[members[0], members[1]].map(lead => <MemberCard member={lead} />)}
-          </Flex>
-
-          <Text mt={8} textAlign={"center"} fontSize={"xx-large"} fontWeight={"bold"}>Tech Leads</Text>
-          <Flex direction={{ base: 'column', md: 'row' }} wrap="wrap" justify="center" align="center">
-              {[members[2], members[3]].map(lead => <MemberCard member={lead} color={colors.blue500} />)}
-          </Flex>
-
-          <Text mt={8} textAlign={"center"} fontSize={"xx-large"} fontWeight={"bold"}>Operation, Partnership, Marketing Leads</Text>
-          <Flex direction={{ base: 'column', md: 'row' }} wrap="wrap" justify="center" align="center">
-              {[{m:members[4], c:colors.red500}, {m:members[5], c:colors.green500}, {m:members[6], c:colors.yellow600}, {m:members[7], c:colors.blue500}].map(lead => 
-                  <MemberCard member={lead.m} color={lead.c} />)}
-          </Flex> */}
       </Box>
   )
 }
