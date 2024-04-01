@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react'
+import { ChakraProvider, Box } from '@chakra-ui/react'
+import { Navbar } from "./components/Navbar"
+import { Route, Routes, BrowserRouter } from 'react-router-dom'
+import Home from './components/Home'
+import Team from './components/Team'
+import Donate from './components/Donate'
+import Info from './components/Info'
+import Footer from './components/Footer'
+import theme from "./theme"
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChakraProvider theme={theme}>
+      <BrowserRouter>
+        <Navbar/>
+
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/team" element={<Team/>}/>
+        <Route path="/donate" element={<Donate/>}/>
+        <Route path="/info" element={<Info/>}/>
+      </Routes>
+      </BrowserRouter>
+
+      <Box>
+        <Footer/>
+      </Box>
+    </ChakraProvider>
   );
 }
 
