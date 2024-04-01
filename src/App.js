@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { ChakraProvider, Box } from '@chakra-ui/react'
 import { Navbar } from "./components/Navbar"
 import { Route, Routes, BrowserRouter } from 'react-router-dom'

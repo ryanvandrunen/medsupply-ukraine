@@ -13,7 +13,6 @@ import {
   Heading,
   Flex,
   Image,
-  keyframes,
 } from "@chakra-ui/react";
 import supplies from "../img/supplies.jpg";
 import { GoArrowRight } from "react-icons/go";
