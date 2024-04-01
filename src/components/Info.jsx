@@ -67,6 +67,20 @@ const ITEMS = [
   },
 ];
 
+const glideAnim = `
+  @keyframes glide {
+    0% {
+      transform: translateX(0);
+    }
+    70% {
+      transform: translateX(0.5rem);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+`;
+
 export default function Info() {
   return (
     <Box background="greyCons">
@@ -171,10 +185,19 @@ export default function Info() {
                   air shipments.
                 </Text>
                 <br />
+                No{" "}
                 <Text as="span" color="blueCons">
-                  No
+                  sprays
+                </Text>
+                ,{" "}
+                <Text as="span" color="blueCons">
+                  liquids
+                </Text>
+                , or{" "}
+                <Text as="span" color="blueCons">
+                  alcohol based First-Aid Kits.
                 </Text>{" "}
-                sprays, liquids, or alcohol based First-Aid Kits. <br />
+                <br />
                 Supplies must be{" "}
                 <Text as="span" color="blueCons">
                   unopened
@@ -189,17 +212,27 @@ export default function Info() {
               <Box align="center">
                 <Text
                   as="a"
-                  position="relative"
                   background="yellowCons"
                   p={2}
+                  paddingRight={4}
+                  fontSize={{ base: "xl", md: "2xl" }}
                   target="_blank"
                   rel="noopener noreferrer"
                   href={SUPPLIES_LINK}
-                  width="fit-content"
-                  display="flex"
                 >
                   FULL LIST
-                  <GoArrowRight />
+                  <span
+                    className="arrow"
+                    style={{
+                      display: "inline-block",
+                      marginLeft: "0.5rem",
+                      verticalAlign: "middle",
+                      animation: "glide 1.5s infinite",
+                    }}
+                  >
+                    <GoArrowRight />
+                  </span>
+                  <style>{glideAnim}</style>
                 </Text>
               </Box>
             </Stack>
