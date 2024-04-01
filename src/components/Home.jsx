@@ -24,7 +24,7 @@ export default function Home() {
             <Heading
               lineHeight={1.1}
               fontWeight={"medium"}
-              fontSize={{ base: "4xl", sm: "4xl", lg: "6xl" }}
+              fontSize={{ base: "4xl", sm: "5xl", lg: "7xl" }}
               textAlign={"center"}
             >
               <Text

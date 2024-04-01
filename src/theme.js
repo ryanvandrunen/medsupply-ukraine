@@ -13,7 +13,7 @@ const theme = extendTheme({
     colors: {
         blueCons: "#0071CE",
         yellowCons: "#FCDF51",
-        greyCons: "#F3F3F3"
+        greyCons: "#EEEEEE"
     }
 })
 
