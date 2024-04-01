@@ -218,6 +218,7 @@ export default function Info() {
                   target="_blank"
                   rel="noopener noreferrer"
                   href={SUPPLIES_LINK}
+                  transition="0.5s ease-in-out"
                 >
                   FULL LIST
                   <span

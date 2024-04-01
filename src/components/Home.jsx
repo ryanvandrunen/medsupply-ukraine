@@ -6,19 +6,19 @@ import { GoArrowRight } from "react-icons/go";
 const SECTIONS = [
   {
     title: "TEAM",
-    desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+    desc: "Check out the brilliant students responsible for the club's operations!",
     layout: "bottom",
     href: "team",
   },
   {
     title: "INFO",
-    desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+    desc: "See a comprehensive list of what supplies you can donate!",
     layout: "top",
     href: "info",
   },
   {
     title: "DONATE",
-    desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+    desc: "Get more information on how you can contribute today!",
     layout: "bottom",
     href: "donate",
   },
@@ -44,6 +44,7 @@ export default function Home() {
       color={"gray.700"}
       fontSize={{ base: "xl", sm: "xl", lg: "2xl" }}
       textAlign={"center"}
+      px={4}
     >
       {section.desc}
     </Text>
@@ -58,6 +59,11 @@ export default function Home() {
         fontSize={{ base: "xl", md: "2xl" }}
         href={section.href}
         color="blueCons"
+        transition="0.5s ease-in-out"
+        _hover={{
+          color: "white",
+          background: "blueCons",
+        }}
       >
         {section.title}
         <span
