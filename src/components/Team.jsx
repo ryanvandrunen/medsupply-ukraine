@@ -11,24 +11,46 @@ import React from "react";
 import logo from "../img/medsupply_logo.png";
 import { MemberCard } from "./MemberCard";
 
-const TEAM = [
+const TEAMS = [
   {
-    name: "Placeholder",
-    linkedIn: "https://www.linkedin.com/in/ryan-vandrunen/",
-    pfp: logo,
-    position: "Lead",
+    section: "CLUB LEADS",
+    members: [
+      {
+        name: "Placeholder",
+        linkedIn: "https://www.linkedin.com/in/ryan-vandrunen/",
+        pfp: logo,
+        position: "Lead",
+      },
+      {
+        name: "Placeholder",
+        linkedIn: "https://www.linkedin.com/in/ryan-vandrunen/",
+        pfp: logo,
+        position: "Co-Lead",
+      },
+    ],
   },
   {
-    name: "Placeholder",
-    linkedIn: "https://www.linkedin.com/in/ryan-vandrunen/",
-    pfp: logo,
-    position: "Co-Lead",
-  },
-  {
-    name: "Placeholder",
-    linkedIn: "https://www.linkedin.com/in/ryan-vandrunen/",
-    pfp: logo,
-    position: "Operations Manager",
+    section: "OPERATION LEADS",
+    members: [
+      {
+        name: "Placeholder",
+        linkedIn: "https://www.linkedin.com/in/ryan-vandrunen/",
+        pfp: logo,
+        position: "Operations Manager",
+      },
+      {
+        name: "Placeholder",
+        linkedIn: "https://www.linkedin.com/in/ryan-vandrunen/",
+        pfp: logo,
+        position: "Operations Manager",
+      },
+      {
+        name: "Placeholder",
+        linkedIn: "https://www.linkedin.com/in/ryan-vandrunen/",
+        pfp: logo,
+        position: "Operations Manager",
+      },
+    ],
   },
 ];
 
@@ -80,12 +102,11 @@ const landing = () => (
           overflow={"hidden"}
         >
           {/* <Image
-                  alt={'Hero Image'}
                   fit={'cover'}
                   align={'center'}
                   w={'100%'}
                   h={{ base: '100%', sm: '110%', lg: '115%' }}
-                  src={gdscGroupPic}
+                  src={}
                   /> */}
         </Box>
       </Flex>
@@ -103,58 +124,36 @@ export default function Team() {
       ></Text>
       {landing()}
 
-      <Heading
-        lineHeight={1.1}
-        fontWeight={"medium"}
-        fontSize={"xx-large"}
-        textAlign={"center"}
-      >
-        <Text
-          as={"span"}
-          position={"relative"}
-          backgroundColor={"yellowCons"}
-          px={2}
-        >
-          CLUB LEADS
-        </Text>
-      </Heading>
-      <Flex
-        direction={{ base: "column", md: "row" }}
-        wrap="wrap"
-        justify="center"
-        align="center"
-      >
-        {[TEAM[0], TEAM[1]].map((lead) => (
-          <MemberCard member={lead} />
-        ))}
-      </Flex>
-
-      <Heading
-        mt={8}
-        lineHeight={1.1}
-        fontWeight={"medium"}
-        fontSize={"xx-large"}
-        textAlign={"center"}
-      >
-        <Text
-          as={"span"}
-          position={"relative"}
-          backgroundColor={"yellowCons"}
-          px={2}
-        >
-          OPERATION LEADS
-        </Text>
-      </Heading>
-      <Flex
-        direction={{ base: "column", md: "row" }}
-        wrap="wrap"
-        justify="center"
-        align="center"
-      >
-        {[TEAM[2], TEAM[2], TEAM[2]].map((lead) => (
-          <MemberCard member={lead} />
-        ))}
-      </Flex>
+      {TEAMS.map((team, i) => (
+        <>
+          <Heading
+            lineHeight={1.1}
+            mt={10}
+            fontWeight="medium"
+            fontSize="4xl"
+            textAlign="center"
+          >
+            <Text
+              as="span"
+              position="relative"
+              backgroundColor="yellowCons"
+              px={2}
+            >
+              {team.section}
+            </Text>
+          </Heading>
+          <Flex
+            direction={{ base: "column", md: "row" }}
+            wrap="wrap"
+            justify="center"
+            align="center"
+          >
+            {team.members.map((lead) => (
+              <MemberCard member={lead} />
+            ))}
+          </Flex>
+        </>
+      ))}
     </Box>
   );
 }

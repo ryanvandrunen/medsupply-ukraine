@@ -17,7 +17,6 @@ const SOCIAL_BUTTONS = [
     href: "mailto:medsupply.ukraine@gmail.com",
     label: "Email",
     icon: FaRegEnvelope,
-    hoverIcon: FaEnvelope,
   },
   {
     href: "https://www.instagram.com/medsupply_ukraine/",
