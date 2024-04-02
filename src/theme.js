@@ -14,6 +14,21 @@ const theme = extendTheme({
         blueCons: "#0071CE",
         yellowCons: "#FCDF51",
         greyCons: "#EEEEEE"
+    },
+    animations: {
+        glide: `
+        @keyframes glide {
+          0% {
+            transform: translateX(0);
+          }
+          70% {
+            transform: translateX(0.5rem);
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
+      `
     }
 })
 

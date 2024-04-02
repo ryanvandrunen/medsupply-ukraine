@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  AspectRatio,
-  Box,
-  Container,
-  Heading,
-  Text,
-  Stack,
-} from "@chakra-ui/react";
+import { Box, Heading, Text, Stack } from "@chakra-ui/react";
 import { GoArrowRight } from "react-icons/go";
 
 const FORMID =
@@ -121,20 +114,31 @@ export default function Donate() {
           py={{ base: 10, md: 16 }}
           spacing={{ base: 8, md: 10 }}
         >
-          {LINKS.map((link, i) => (
-            <Stack
-              flex={1}
-              key={i}
-              direction={
-                link.layout === "top"
-                  ? { base: "column-reverse", md: "column" }
-                  : { base: "column", md: "column" }
-              }
+          {LINKS.length > 0 ? (
+            LINKS.map((link, i) => (
+              <Stack
+                flex={1}
+                key={i}
+                direction={
+                  link.layout === "top"
+                    ? { base: "column-reverse", md: "column" }
+                    : { base: "column", md: "column" }
+                }
+              >
+                {link.layout === "bottom" ? top(link) : bottom(link)}
+                {link.layout === "bottom" ? bottom(link) : top(link)}
+              </Stack>
+            ))
+          ) : (
+            <Text
+              color={"gray.700"}
+              fontSize={{ base: "xl", sm: "xl", lg: "2xl" }}
+              textAlign={"center"}
+              px={4}
             >
-              {link.layout === "bottom" ? top(link) : bottom(link)}
-              {link.layout === "bottom" ? bottom(link) : top(link)}
-            </Stack>
-          ))}
+              There are currently no active links, please check again soon.
+            </Text>
+          )}
         </Stack>
       </Box>
     </Box>
