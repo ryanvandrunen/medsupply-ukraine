@@ -8,8 +8,9 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import React from "react";
-import logo from "../img/medsupply_logo.png";
 import { MemberCard } from "./MemberCard";
+import logo from "../img/medsupply_logo.png";
+import team from "../img/team.jpg";
 
 const TEAMS = [
   {
@@ -101,13 +102,13 @@ const landing = () => (
           width={"full"}
           overflow={"hidden"}
         >
-          {/* <Image
-                  fit={'cover'}
-                  align={'center'}
-                  w={'100%'}
-                  h={{ base: '100%', sm: '110%', lg: '115%' }}
-                  src={}
-                  /> */}
+          <Image
+            fit={"cover"}
+            align={"center"}
+            w={"100%"}
+            h={{ base: "100%", sm: "110%", lg: "115%" }}
+            src={team}
+          />
         </Box>
       </Flex>
     </Stack>
