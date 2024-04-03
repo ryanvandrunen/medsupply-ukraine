@@ -7,13 +7,13 @@ const FORMID =
 
 const LINKS = [
   {
-    href: "gofundme.com/example",
+    href: "https://www.gofundme.com/en-ca",
     title: "TOY DRIVE",
     desc: "All monetary donations go directly towards buying gifts for Ukrainian refugee children!",
     layout: "bottom",
   },
   {
-    href: "gofundme.com/example",
+    href: "https://www.gofundme.com/en-ca",
     title: "TOY DRIVE",
     desc: "All monetary donations go directly towards buying gifts for Ukrainian refugee children!",
     layout: "bottom",
@@ -51,6 +51,8 @@ export default function Donate() {
       <Text
         as="a"
         p={2}
+        target="_blank"
+        rel="noopener noreferrer"
         paddingRight={4}
         fontSize={{ base: "xl", md: "2xl" }}
         href={link.href}
