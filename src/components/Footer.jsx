@@ -8,7 +8,7 @@ import {
   Image,
   Box,
 } from "@chakra-ui/react";
-import { FaInstagram, FaRegEnvelope, FaEnvelope } from "react-icons/fa";
+import { FaInstagram, FaRegEnvelope } from "react-icons/fa";
 import { FiLink } from "react-icons/fi";
 import logo from "../img/logo.png";
 
@@ -54,6 +54,8 @@ const Footer = () => {
               border="1px solid #0057B7"
               borderRadius="50px"
               transition="0.3s ease-in-out"
+              target="_blank"
+              rel="noopener noreferrer"
               _hover={{
                 bg: "#0057B7",
                 color: "#FFDD00",

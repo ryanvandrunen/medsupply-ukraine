@@ -127,7 +127,7 @@ export default function Home() {
           alignItems={"center"}
           alignSelf={"center"}
         >
-          <Image src={flag} maxH="1000px" w="100%" />
+          <Image src={flag} w="100%" />
         </Box>
       </Container>
       <Box background="white">

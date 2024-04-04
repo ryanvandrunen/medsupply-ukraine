@@ -82,23 +82,11 @@ export default function Donate() {
 
   return (
     <Box background="greyCons">
-      <Box height={{ base: "600px", md: "600px" }}>
-        <iframe
-          src={FORMID}
-          width="100%"
-          height="100%"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-        >
-          Loading…
-        </iframe>
-      </Box>
-      <Box background="white" py={8}>
+      <Box py={8}>
         <Heading
           lineHeight={1.1}
           fontWeight={"medium"}
-          fontSize={"4xl"}
+          fontSize={{ base: "3xl", md: "4xl" }}
           align="center"
         >
           <Text
@@ -142,6 +130,18 @@ export default function Donate() {
             </Text>
           )}
         </Stack>
+      </Box>
+      <Box height={{ base: "700px", md: "800px" }}>
+        <iframe
+          src={FORMID}
+          width="100%"
+          height="100%"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        >
+          Loading…
+        </iframe>
       </Box>
     </Box>
   );
