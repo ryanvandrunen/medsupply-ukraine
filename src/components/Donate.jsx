@@ -12,12 +12,6 @@ const LINKS = [
     desc: "All monetary donations go directly towards buying gifts for Ukrainian refugee children!",
     layout: "bottom",
   },
-  {
-    href: "https://www.gofundme.com/en-ca",
-    title: "TOY DRIVE",
-    desc: "All monetary donations go directly towards buying gifts for Ukrainian refugee children!",
-    layout: "bottom",
-  },
 ];
 
 const glideAnim = `
@@ -64,17 +58,16 @@ export default function Donate() {
         }}
       >
         {link.title}
-        <span
+        <Box
+          as="span"
           className="arrow"
-          style={{
-            display: "inline-block",
-            marginLeft: "0.5rem",
-            verticalAlign: "middle",
-            animation: "glide 1.5s infinite",
-          }}
+          display="inline-block"
+          ml="0.5rem"
+          verticalAlign={"middle"}
+          animation="glide 1.5s infinite"
         >
           <GoArrowRight />
-        </span>
+        </Box>
         <style>{glideAnim}</style>
       </Text>
     </Box>

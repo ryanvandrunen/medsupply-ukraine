@@ -161,7 +161,11 @@ export default function Info() {
                       <AccordionIcon />
                     </AccordionButton>
                   </h2>
-                  <AccordionPanel pb={4}>
+                  <AccordionPanel
+                    pb={4}
+                    background="greyCons"
+                    borderRadius="md"
+                  >
                     <VStack spacing={2}>
                       {item.supplies.map((supply, index) => (
                         <Text key={index} color="blueCons">
@@ -221,17 +225,16 @@ export default function Info() {
                   transition="0.5s ease-in-out"
                 >
                   FULL LIST
-                  <span
+                  <Box
+                    as="span"
                     className="arrow"
-                    style={{
-                      display: "inline-block",
-                      marginLeft: "0.5rem",
-                      verticalAlign: "middle",
-                      animation: "glide 1.5s infinite",
-                    }}
+                    display="inline-block"
+                    ml="0.5rem"
+                    verticalAlign="middle"
+                    animation="glide 1.5s infinite"
                   >
                     <GoArrowRight />
-                  </span>
+                  </Box>
                   <style>{glideAnim}</style>
                 </Text>
               </Box>

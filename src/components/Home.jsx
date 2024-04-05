@@ -66,17 +66,16 @@ export default function Home() {
         }}
       >
         {section.title}
-        <span
+        <Box
+          as="span"
           className="arrow"
-          style={{
-            display: "inline-block",
-            marginLeft: "0.5rem",
-            verticalAlign: "middle",
-            animation: "glide 1.5s infinite",
-          }}
+          display="inline-block"
+          ml="0.5rem"
+          verticalAlign={"middle"}
+          animation="glide 1.5s infinite"
         >
           <GoArrowRight />
-        </span>
+        </Box>
         <style>{glideAnim}</style>
       </Text>
     </Box>
@@ -84,11 +83,11 @@ export default function Home() {
 
   return (
     <Box backgroundColor="greyCons">
-      <Container maxW={"8xl"}>
+      <Container maxW="8xl">
         <Stack
           align={"center"}
           spacing={{ base: 8, md: 10 }}
-          py={{ base: 20, md: 14 }}
+          py={{ base: 24, md: 16 }}
           direction={{ base: "column", md: "row" }}
         >
           <Stack flex={1} spacing={{ base: 20, md: 10 }}>
@@ -121,13 +120,8 @@ export default function Home() {
             </Text>
           </Stack>
         </Stack>
-        <Box
-          justifyContent={"center"}
-          alignContent={"center"}
-          alignItems={"center"}
-          alignSelf={"center"}
-        >
-          <Image src={flag} w="100%" />
+        <Box overflow="hidden">
+          <Image src={flag} maxWidth={{ base: "120%", md: "100%" }} />
         </Box>
       </Container>
       <Box background="white">

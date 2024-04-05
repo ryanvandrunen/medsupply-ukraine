@@ -80,11 +80,11 @@ const landing = () => (
           </Text>
           <br />
         </Heading>
-        <Text color={"gray.700"}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-          vel rhoncus ante. Integer in augue vel eros porttitor gravida id ac
-          risus. Vivamus non vestibulum arcu. Interdum et malesuada fames ac
-          ante ipsum primis in faucibus.
+        <Text fontSize="lg" color={"gray.700"}>
+          Introducing the dedicated core team of our club, all hailing from
+          various faculties and academic years at Queen's University. <br />
+          <br />
+          Explore below to connect with our team!
         </Text>
       </Stack>
       <Flex
