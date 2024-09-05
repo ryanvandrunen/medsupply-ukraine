@@ -23,7 +23,8 @@
   "scripts": {
     "predeploy": "npm run build",
     "build": "vite build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -b main -d dist",
+    "dev": "vite",
     "start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
