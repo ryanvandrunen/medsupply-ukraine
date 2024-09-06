@@ -107,7 +107,7 @@ const landing = () => (
             align={"center"}
             w={"100%"}
             h={{ base: "100%", sm: "110%", lg: "115%" }}
-            src={team}
+            src={logo}
           />
         </Box>
       </Flex>
