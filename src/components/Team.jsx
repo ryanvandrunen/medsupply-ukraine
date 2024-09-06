@@ -10,7 +10,7 @@ import {
 import React from "react";
 import { MemberCard } from "./MemberCard";
 import logo from "../img/medsupply_logo.png";
-import team from "../img/team.jpg";
+// import team from "../img/team.jpg";
 
 const TEAMS = [
   {
