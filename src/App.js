@@ -8,8 +8,12 @@ import Donate from './components/Donate'
 import Info from './components/Info'
 import Footer from './components/Footer'
 import theme from "./theme"
+import { useEffect } from 'react' 
 
 function App() {
+  useEffect(() => {
+    document.title = "Medsupply Ukraine"
+  }, [])
 
   return (
     <ChakraProvider theme={theme}>
